@@ -1,0 +1,50 @@
+@import '../../styles/variables'
+  
+.randomchar
+  display: grid
+  grid-template-columns: 1fr 1fr
+  box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.25)
+  &__block
+    padding: 35px 35px 35px 40px
+    display: grid
+    grid-template-columns: 180px auto
+    gap: 30px
+  &__img
+    width: 180px
+    height: 180px
+    object-fit: cover
+  &__info
+    display: grid
+    grid-template-rows: minmax(29, auto) 90px 38px
+    padding-top: 3px
+    gap: 10px
+  &__name
+    font-size: 22px
+    font-weight: bold
+    text-transform: uppercase
+  &__descr
+    font-size: 14px
+    font-weight: 400
+  &__btns
+    a:nth-child(1)
+      margin-right: 30px
+
+  &__static
+    padding: 35px 40px 35px 35px
+    background-color: $color-black
+    position: relative
+    .button
+      margin-top: 13px
+  &__title
+    font-weight: bold
+    color: #FFFFFF
+    font-size: 24px
+    line-height: 32px
+    letter-spacing: -0.045em
+    &:nth-child(1)
+      margin-bottom: 33px
+  &__decoration
+    position: absolute
+    bottom: 14px
+    right: -37px
+      
