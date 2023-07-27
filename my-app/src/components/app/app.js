@@ -1,5 +1,6 @@
 import AppHeader from "../appHeader/appHeader";
 import RandomChar from "../randomChar/randomChar";
+import CharList from "../charList/charList";
 
 const App = () => {
   return (
@@ -7,6 +8,9 @@ const App = () => {
       <AppHeader/>
       <main className="main">
         <RandomChar/>
+        <section className="char__content">
+          <CharList/>
+        </section>
       </main>
     </div>
   )
